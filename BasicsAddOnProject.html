@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video games - My hobby 👾</title>
+      <style>
+   body{
+background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);  }
+   h1{
+    text-align: center;
+   }
+   h2{
+    text-align: center;
+   }
+   button{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #b80257;
+    background: white;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 5px 10px;
+    transform: all 150ms ease-in-out;
+    width: 200px;
+   }
+   button:hover{
+    background: #c471f5 
+   }
+   .container{
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+   border: 3px solid #b80257
+   }
+   
+   footer{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+   }
+   img{
+        max-width: 100%;
+    }
+    .dark-button{
+    font: 10px;
+    background: black;
+    color: white;
+    padding: 5 8px; 
+
+    }
+    .game-intro-pic{
+        border-radius: 10px;
+        transition: transform 150ms ease-in-out, filter 2000ms ease-in;
+    }
+      .game-intro-pic:hover{
+        filter: contrast(80%);
+        transform: scale(1.1) ;
+      }
+      p{
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      .wiki-link{
+        text-decoration: none;
+      }
+      .grid{
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+      }
+      .grid img{
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+        transition: all 250ms ease-in-out;
+      }
+      .grid img:hover{
+        transform: scale(2);
+      }
+      .dark{
+        background: black;
+        color: white;
+      }
+      .dark .container{
+        background: rgba(255, 255, 255, 0.1);
+      }
+.dark a{
+    color: #dd356e;
+}
+  </style>
+  </head>
+  <body>
+    <button class = "dark-button">Change Theme</button>
+    <div class = "container">
+    <h1>👾 Video Games</h1>
+    <h2>My favorite hobby</h2>
+    <a href="https://www.metacritic.com/browse/games/score/metascore/all/all/filtered" target="_blank"> 
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/612/original/javier-martinez-hUD0PUczwJQ-unsplash.jpg?1680365428" 
+alt=""
+    class = "game-intro-pic"
+/>  
+</a>
+<div class = "grid">
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/616/original/yasin-hasan-PU1uYnZrAL0-unsplash.jpg?1680367384"
+alt=""
+/>
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/610/original/ella-don-K4kfIEhj4GM-unsplash.jpg?1680365415" 
+alt=""
+/>
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/609/original/ella-don-DdiwOzeqkDU-unsplash.jpg?1680365408" 
+alt=""
+/>
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/608/original/carl-raw-m3hn2Kn5Bns-unsplash.jpg?1680365400"
+ alt=""
+/>
+</div>
+
+    <p>
+      A video game is an electronic game that involves interaction with a user
+      interface or input device (such as a joystick, controller, keyboard, or
+      motion sensing device) to generate visual feedback from a display device,
+      most commonly shown in a video format on a television set, computer
+      monitor, flat-panel display or touchscreen on handheld devices, or a
+      virtual reality headset, hence the name.
+    </p>
+    <p> <a  class = "wiki-link" href="https://en.wikipedia.org/wiki/Video_game" target="_blank"> 📖  Read on Wikipedia </a></p>
+    </div>
+    <footer>
+      Coded with 💕 by <a href="https://www.shecodes.io/" target="_blank">Victoria Okoro
+    </footer></a> 
+    <script>
+
+        function changeTheme(){
+            let body = document.querySelector("body");
+           body.classList.toggle("dark");
+    
+        }
+        let theme = document.querySelector(".dark-button");
+        theme.addEventListener("click", changeTheme);
+    </script>
+  </body>
+</html>
